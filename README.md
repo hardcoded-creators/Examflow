@@ -110,7 +110,7 @@ Follow these 5 steps to verify the entire system:
 * `index.html` — The complete working application (UI + Constraint Engine).
 
 
-* `presentation.pptx` — The official presentation slide deck.
+* `presentation.pptx` — The official presentation slide deck.https://drive.google.com/file/d/1DhArpALNsJ2BlgcYpd8LuCem4hNUtJx2/view?usp=sharing
 
 
 * `README.md` — Project documentation and setup guide.
