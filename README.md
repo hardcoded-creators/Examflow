@@ -117,23 +117,6 @@ Follow these 5 steps to verify the entire system:
 
 
 
----
-
-## ✅ Pre-Submission Checklist
-
-* [x] All 5 registered members included (`Hardcoded`).
-
-
-* [x] Repository is 100% **Public** (`hardcoded-creators/examflow`).
-
-
-* [x] All teammates have pinned/displayed this repo on their GitHub profiles.
-
-
-* [x] Presentation (`presentation.pptx`) is committed inside the repository.
-
-
-* [x] All work committed before the 09:00 AM deadline on October 10, 2026.
 
 
 
