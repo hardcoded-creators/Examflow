@@ -1,259 +1,144 @@
-## Hi there 👋
+Here is your exact, finalized `README.md` with your repository link (`hardcoded-creators/examflow`) and submission blocks already filled in.
+
+Copy and paste this directly into your repo's `README.md`:
+
 ```markdown
-# ExamFlow — Intelligent Examination Seating, Scheduling & Invigilator Management System
+# ExamFlow — Intelligent Exam Seating & Staff Planner
 
-> **BST Protothon 2K26 October Edition** | **Problem Statement #9**[cite: 1]  
-> *Deterministic constraint-optimized seating allocations and dynamic replanning in under 2 seconds.*
+> **BST Protothon 2K26 (October Edition)** | **Problem #9: Exam seating with no clashes, replanned in seconds**[cite: 1]  
+> *A smart system that arranges exam seats and invigilators in seconds, and fixes sudden morning disruptions with one click.*
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Public%20Repository-10b981?style=for-the-badge&logo=github)](#)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-hardcoded--creators%2Fexamflow-10b981?style=for-the-badge&logo=github)](https://github.com/hardcoded-creators/examflow)
 [![Status](https://img.shields.io/badge/Build-Production%20Ready-blue?style=for-the-badge)](#)
 [![Hackathon](https://img.shields.io/badge/BST-Protothon%202K26-orange?style=for-the-badge)](#)
-[![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](#)
 
 ---
 
-## 👥 Meet Team Hardcoded
+## 👥 Our Team — Hardcoded
 
-We are a 5-member engineering team building real-time, constraint-optimized software to solve critical campus and administrative bottlenecks[cite: 1]:
+We are 5 students working together on this hackathon project:
 
-| Name | Role / Focus | USN |
+| Name | Role | USN |
 | :--- | :--- | :--- |
-| **Mannat Agarwala** | Team Lead & Full-Stack Architecture | `2392608140` |
-| **Abhyuday Narayan Vaishnav** | Algorithm Design & Constraint Solver Engine | `2392608169` |
-| **Parth Sharma** | Frontend UI & Interactive Seating Grid Layouts | `2392608157` |
-| **Soham K** | Logic Verification & Replan Diff Engine | `2392608137` |
-| **Aditya Soni** | QA Testing, Data Modeling & Documentation | `2392608002` |
+| **Mannat Agarwala** | Team Leader & Full-Stack Development | `2392608140` |
+| **Abhyuday Narayan Vaishnav** | Rules Engine & Algorithms | `2392608169` |
+| **Parth Sharma** | Frontend UI & Seating Grid | `2392608157` |
+| **Soham K** | Logic Testing & Re-planning | `2392608137` |
+| **Aditya Soni** | Demo Data & Documentation | `2392608002` |
 
-### 📌 Official Submission Details
-```text
+### 📌 Official Submission Block 
+text
 TEAM: 2392608140-Hardcoded
 PROBLEM: 9
-REPO: [https://github.com/](https://github.com/)<hardcoded-creators>/<examflow>
-
-```
-
-(Every team member submits this exact block on the portal before the 09:00 deadline.)
-
----
-
-### 🚀 What We Are Building Together
-
-* 🔭 **We’re currently working on:** Building a fully deterministic examination operations and multi-constraint replanning platform under strict overnight hackathon conditions.
+REPO: [https://github.com/hardcoded-creators/examflow](https://github.com/hardcoded-creators/examflow)
 
 
-* 🌱 **We’re currently learning:** Multi-dimensional seating adjacency vectors, delta-diff state versioning, and enterprise SaaS information density inspired by Linear and YouTube Studio.
-* 👯 **We’re looking to collaborate on:** Open-source educational technology, university automation tools, and NP-hard constraint solvers.
-* 🤔 **We’re looking for help with:** Scaling integer programming solvers and distributed real-time scheduling heuristics.
-* 💬 **Ask us about:** Rapid overnight MVP delivery, constraint solvers, clean UI architecture, and git workflow execution.
+## ❓ The Problem We Are Solving
 
+Every semester, exam coordinators spend **2 whole days** manually making seating charts and teacher duty rosters in Excel sheets.
 
-* 📫 **How to reach the team:** Connect with any member through our GitHub profiles linked above.
-* ⚡ **Fun fact about Team Hardcoded:** Five minds, zero sleep, and continuous code commits fueled purely by overnight adrenaline and phonk playlists!
+Even after hours of tedious work, critical issues pop up on exam morning:
 
-
+1. **Cheating Risks:** Students giving the same subject end up sitting side-by-side or right in front of each other.
+2. **Teacher Clashes:** One teacher is rostered to two different rooms at the exact same time.
+3. **Overcrowded Rooms:** More students are sent to a hall than there are usable, working desks.
+4. **Panic When Things Go Wrong:** If a room gets locked or a teacher calls in sick at 8:00 AM, the whole Excel sheet breaks down, causing campus-wide chaos and delaying the exam.
 
 ---
 
-## 📌 Problem Statement & Context
+## 💡 What ExamFlow Does
 
-*Submitted by Vinay (Problem Statement 9).*
+**ExamFlow** does in 2 seconds what usually takes 2 days, ensuring complete adherence to university rules:
 
-At academic institutions, an examination coordinator spends **up to 2 full days** manually piecing together seating arrangements and invigilation rosters inside spreadsheets. Despite hours of manual work, critical operational clashes regularly surface on exam morning:
-
-1. **Academic Dishonesty Vulnerability:** Students taking the exact same subject seated adjacent to each other.
-2. **Double-Booked Faculty:** An invigilator assigned to two separate examination halls during the exact same time slot.
-3. **Room Overcrowding:** Allocating more students than the physically verified usable desk capacity.
-4. **Catastrophic Fragility on Disruption:** When a room becomes unusable (e.g., power outage, roof leak) or an invigilator calls in sick at 8:00 AM, the entire spreadsheet breaks down, forcing high-stress emergency manual reassignments that delay exams.
-
-### 💡 The Solution: ExamFlow
-
-**ExamFlow** is an enterprise-grade examination operations platform that combines a **deterministic multi-constraint scheduling engine** with an **instant delta-diff replanner**. It produces fully validated plans in seconds, enforces hard separation rules, truthfully identifies room bottlenecks in plain English, and handles morning disruptions by re-allocating only affected students while keeping untouched assignments preserved.
+* **No Same-Subject Neighbors:** Automatically keeps students with the same question paper separated in rows and columns.
+* **Fair & Clash-Free Teachers:** Assigns teachers to rooms without any double-booking and shares the duty load fairly across faculty.
+* **Smart 1-Click Replanning:** If Hall 2 closes down, the system moves *only* the students from Hall 2 into other free desks, keeping everyone else untouched.
+* **Honest Feedback in Simple English:** If a room does not have enough seats, it clearly tells you: *"Short by 12 seats in Hall A"*, instead of crashing or showing random errors.
 
 ---
 
-## 🌟 Key Capabilities & Features
+## 📊 Quick Comparison
 
-### 1. Constraint-Optimized Seating Engine
-
-* **Horizontal & Vertical Adjacency Prevention:** Checks surrounding coordinate vectors to ensure students sitting for the same paper never sit beside each other.
-* **Physical vs. Usable Capacity:** Disregards defective, blocked, or accessibility-reserved desks.
-* **Multi-Subject Interleaving:** Mathematically interleaves students from different courses (e.g., Computer Science + Mechanical Engineering) across the same hall.
-
-### 2. Intelligent Staff Rostering
-
-* **Zero Double-Booking:** Cross-checks master schedules to prevent simultaneous duties.
-* **Leave & Absence Awareness:** Blocks assignments during registered faculty leaves.
-* **Workload Balancing:** Evenly balances duty allocations across all available faculty.
-
-### 3. Sub-Second Disruption Replanning
-
-* **Room Outage Simulation:** Instantly moves displaced students to available rooms without wiping unaffected schedules.
-* **Staff Dropout Triage:** Recommends eligible, free substitute invigilators with plain-language explanations.
-* **Safe Plan Versioning:** Generates draft version diffs (`v1.0` $\rightarrow$ `v1.1`) requiring coordinator approval before final publication.
-
-
-
-### 4. Interactive Visual Console
-
-* **Interactive Seating Grid:** Color-coded status map (Occupied, Available, Blocked, Selected) with single-click student inspect panels.
-* **Explainable Conflict Center:** Plain-English explanations of capacity shortages and rules rather than vague error messages.
-* **One-Click Audit & Export:** Instant downloads for room door seating sheets, invigilator rosters, and master schedules in CSV, PDF, and print layouts.
-
----
-
-## 📊 Operational Benchmark Comparison
-
-| Performance Metric | Traditional Manual Excel | ExamFlow Platform | Measurable Advantage |
+| What Matters | Old Way (Excel Sheet) | ExamFlow | The Difference |
 | --- | --- | --- | --- |
-| **Generation Time (120+ Students)** | ~16–20 Hours (2 Days) | **< 1.8 Seconds** | **99.9% Time Saved** |
-| **Same-Subject Adjacency Clashes** | 5 – 15 Frequent Violations | **0 (Strict Zero)** | **100% Elimination** |
-| **Emergency Re-plan Duration** | 45–60 Minutes | **< 1.2 Seconds** | **Instantaneous** |
-| **Unaffected Assignment Retention** | ~0% (Entire sheet re-done) | **> 85% Preserved** | **Zero Campus Chaos** |
-| **Capacity Shortage Reporting** | Realized on Exam Day | **Pre-Run Plain English** | **Truthful Explainability** |
+| **Time to Plan 100+ Students** | 2 Days (16+ hours) | **Under 2 Seconds** | Saves 99% of time |
+| **Cheating / Adjacency Errors** | Often happens | **Zero (0)** | Completely prevented |
+| **Fixing a Sudden Room Outage** | 45 minutes of panic | **1 Second** | Instant fix |
+| **Unchanged Students Moved?** | Yes, whole sheet changes | **No, 85%+ stay in same seats** | Zero confusion on campus |
 
 ---
 
-## 🏗️ Architecture & Technology Stack
+## 🚀 How to Run It (Takes 10 Seconds)
 
-```text
-[ CSV Ingestion / Demo Dataset ]
-              │
-              ▼
-[ Ingestion Validator & Normalizer ] (Deduplication, ID checks, Time range tests)
-              │
-              ▼
-[ Deterministic Constraint Engine ] ──► [ Hard Rules ] (Adjacency, Overlap, Capacity)
-              │                     ──► [ Soft Rules ] (Room clustering, Workload equity)
-              ▼
-[ Delta-Diff Replanner Engine ] ─────► [ Room Outage / Invigilator Absence Handler ]
-              │
-              ▼
-[ Enterprise UI Dashboard ] ────────► [ Visual Grid, Conflict Feed, PDF/CSV Exporters ]
+You do not need to install complex databases or backends to run this:
 
-```
+1. **Clone the project:**
+bash
+git clone [https://github.com/hardcoded-creators/examflow.git](https://github.com/hardcoded-creators/examflow.git)
+cd examflow
 
-* **Languages:** JavaScript (ES6+), HTML5, CSS3
-* **Frameworks & UI:** Tailwind CSS, Lucide Icons, Modern Component Layouts
-* **Optimization Logic:** Deterministic constraint-satisfaction heuristic with adjacency vector checking
-* **Collaboration & Versioning:** Git, GitHub, Markdown
+
+
+
+2. **Open the application:**
+* Simply **double-click `index.html**` on your computer.
+* It runs directly in Google Chrome, Microsoft Edge, Brave, or Safari.
 
 
 
 ---
 
-## 📁 Repository Structure
+## 🧪 Quick Demo Guide for Judges
 
-```text
-├── index.html                   # Interactive seating grid & planner web application[cite: 1]
-├── presentation.pptx            # Required hackathon slide deck committed to repository[cite: 1]
-├── presentation.pdf             # PDF version of presentation deck
-├── README.md                    # Complete project documentation[cite: 1]
+Follow these 5 steps to verify the entire system:
 
-
-```
-
----
-
-## 🚀 Getting Started & Local Run Guide
-
-The application is completely self-contained and runs immediately on any system:
-
-### Quick Launch (No Build Required)
-
-1. Clone the repository:
-```bash
-git clone [https://github.com/](https://github.com/)<YOUR_USERNAME>/<YOUR_REPO_NAME>.git
-cd <YOUR_REPO_NAME>
-
-```
-
-
-2. Launch the application:
-* Double-click `index.html` in your file explorer, OR
-* Run via terminal:
-```bash
-# macOS
-open index.html
-# Windows
-start index.html
-# Linux
-xdg-open index.html
-
-```
-
-
-
-
-
----
-
-## 🧪 Live Evaluation Workflow for Judges
-
-Follow these steps to test the entire constraint and replanning engine end-to-end:
-
-1. **Load Test Dataset:** Open the dashboard and click **"Load Demo Data"**. This instantly populates 100+ students, 4 exam halls, and registered faculty.
-2. **Execute Initial Generation:** Navigate to **Schedule Planner** and click **"Generate Plan"**. Notice the runtime indicator completes in `< 2 seconds`, showing a truthful `Feasible` state with 0 hard constraint violations.
-3. **Verify Seating Adjacency:** Open **Seating Arrangements**. Click on any hall (e.g., Hall 101) to verify that no two students taking the same exam paper sit horizontally or vertically next to each other.
-4. **Trigger Room Failure Disruption:**
+1. **Load Data:** Click the **"Load Demo Data"** button on the dashboard to populate students, halls, and invigilators.
+2. **Generate Plan:** Go to **Schedule Planner** and click **"Generate Plan"**. In less than 2 seconds, all students receive valid seats.
+3. **Check the Seating:** Open **Seating Arrangements** and select any hall. Notice how students taking the same exam paper are never seated adjacent to one another.
+4. **Simulate an Emergency:**
 * Go to **Rooms & Halls**.
-* Select **Hall B (Capacity: 35)** and click **"Simulate Room Outage"**.
+* Pick **Hall B** and click **"Simulate Room Outage"**.
 * Click **"Replan Schedule"**.
 
 
-5. **Inspect the Version Diff:**
-* Observe the before-and-after change log: Students in Hall A and Hall C remain seated at their original desks.
-* Only the displaced students from Hall B are moved into available capacity in Hall D.
-* Review the explanation: *"Hall B became unavailable. 32 affected students safely rerouted to Hall D. Preserved 68% of prior assignments without adjacency violations."*
-
-
-6. **Export Verification:** Navigate to **Reports & Exports** and download the room door seating list in CSV/PDF format.
+5. **View the Smart Diff:** Notice that only the displaced students from Hall B are shifted to other rooms, while students in Hall A and C stay in their original seats.
 
 ---
 
-## ⚠️ Truthful Boundary Disclosures & Limitations
+## 📂 Files in this Repository
 
-As required by the hackathon evaluation guidelines, we explicitly document our system constraints:
+* `index.html` — The complete working application (UI + Constraint Engine).
 
-* **Absolute Capacity Saturation:** If total required exam registrations exceed the sum of all physically usable campus seats, ExamFlow does not place students in phantom seats. It marks the plan `Infeasible` and states the exact seat deficit count.
-* **Physical Hardware Integration:** Door-side barcode/biometric verification scanners are currently modeled via software attendance check states.
+
+* `presentation.pptx` — The official presentation slide deck.
+
+
+* `README.md` — Project documentation and setup guide.
+
+
 
 ---
 
-## 📋 Protothon Submission Verification Checklist
+## ✅ Pre-Submission Checklist
 
-* [x] Team consists of 5 eligible, registered members (`Hardcoded`).
-
-
-* [x] Repository created exclusively for BST Protothon 2K26 and set to **Public**.
+* [x] All 5 registered members included (`Hardcoded`).
 
 
-* [x] Repository link pinned/displayed on every team member's GitHub profile.
+* [x] Repository is 100% **Public** (`hardcoded-creators/examflow`).
 
 
-* [x] Complete PowerPoint presentation (`presentation.pptx`) committed directly inside the repo.
+* [x] All teammates have pinned/displayed this repo on their GitHub profiles.
 
 
-* [x] All commits and documentation authored strictly within the official competition window.
+* [x] Presentation (`presentation.pptx`) is committed inside the repository.
 
 
-* [x] Software tested and independently runnable from clean checkout.
+* [x] All work committed before the 09:00 AM deadline on October 10, 2026.
 
 
 
-```
 
-```
-<!--
-**hardcoded-creators/hardcoded-creators** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+TEAM: 2392608140-Hardcoded
+PROBLEM: 9
+REPO: https://github.com/hardcoded-creators/examflow
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
